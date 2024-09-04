@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.64134645, g: 0.8658572, b: 0.880789, a: 1}
+  m_IndirectSpecularColor: {r: 0.6413465, g: 0.86585724, b: 0.8807889, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7522,7 +7522,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f75480b58c8f10a4e95b80e6d92e2272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items: []
   maxInventorySize: 30
   InventoryGO: {fileID: 748925850}
   itemContent: {fileID: 748925849}
@@ -7539,7 +7538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ba5255a4580c18488a4cfec2ac4ad12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactRange: 3
+  interactRange: 4
   playerCamera: {fileID: 1178387431}
 --- !u!1 &451707093 stripped
 GameObject:

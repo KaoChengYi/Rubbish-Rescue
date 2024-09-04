@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d39af0c051ca01b4aac6b82c8c76d989, type: 3}
-  m_Name: PlasticBottle
+  m_Name: PaperBag
   m_EditorClassIdentifier: 
-  type: 3
-  rubbishName: Plastic Bottle
-  sprite: {fileID: 21300000, guid: 9d979b7cd11604b5398b8790e09f2d70, type: 3}
+  type: 2
+  rubbishName: Paper Bag
+  sprite: {fileID: 21300000, guid: a17dd3849936f4f399590d49a2648d83, type: 3}

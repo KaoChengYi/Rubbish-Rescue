@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance; // Singleton
-	public List<Rubbish> items = new List<Rubbish>(); // Internal List of Inventory (Not on UI)
+	public static List<Rubbish> items = new List<Rubbish>(); // Internal List of Inventory (Not on UI)
 	public int maxInventorySize;
 
 	//[SerializeField] Rubbish[] tempRubbish; // Temp (Spawned rubbish in inventory)
@@ -28,8 +28,7 @@ public class InventoryManager : MonoBehaviour
 
 	private void Update()
 	{
-		// Temp (Press to spawn rubbish in inventory)
-		//if (Input.GetKeyDown(KeyCode.E)) AddItem(tempRubbish[Random.Range(0, 3)]);
+		Debug.Log(StaticTransfer.testVar);
 
 		// Press to open Inventory
 		if (Input.GetKeyDown(KeyCode.Tab)) InventoryGO.SetActive(!InventoryGO.activeSelf);
