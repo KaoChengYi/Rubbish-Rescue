@@ -15,4 +15,5 @@ public class Rubbish : ScriptableObject
 
 	public string rubbishName;
 	public Sprite sprite;
+    public string rubbishTag; // Actual tag used for categorization
 }

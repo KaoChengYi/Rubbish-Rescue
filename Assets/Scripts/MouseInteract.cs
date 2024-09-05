@@ -2,11 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MouseInteract : MonoBehaviour
 {
     [SerializeField] float interactRange;
-
+    [SerializeField] string sceneNameToLoad;
     [SerializeField] Camera playerCamera;
 
     void Start()
@@ -35,6 +36,26 @@ public class MouseInteract : MonoBehaviour
 
                 interactable?.Interact();
             }
+
+            if (hit.transform.CompareTag("SceneChangeTrigger"))
+            {
+                ChangeScene(); // Call the method to change scene
+            }
+        }
+    }
+
+
+    // Method to load the new scene
+    private void ChangeScene()
+    {
+        if (!string.IsNullOrEmpty(sceneNameToLoad))
+        {
+            SceneManager.LoadScene(sceneNameToLoad);
+            Debug.Log("Scene changed to: " + sceneNameToLoad);
+        }
+        else
+        {
+            Debug.LogError("Scene name is not specified.");
         }
     }
 }

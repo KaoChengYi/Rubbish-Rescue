@@ -15,3 +15,4 @@ MonoBehaviour:
   type: 2
   rubbishName: Paper Bag
   sprite: {fileID: 21300000, guid: a17dd3849936f4f399590d49a2648d83, type: 3}
+  rubbishTag: PaperBag

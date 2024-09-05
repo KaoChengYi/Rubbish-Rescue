@@ -18,39 +18,44 @@ public class InventoryManager : MonoBehaviour
 
 	private void Awake()
 	{
-		Instance = this;
-	}
+      Instance = this;
+    }
 
 	private void Start()
 	{
-		
-	}
+    }
 
-	private void Update()
+    private void Update()
 	{
 		Debug.Log(StaticTransfer.testVar);
 
 		// Press to open Inventory
 		if (Input.GetKeyDown(KeyCode.Tab)) InventoryGO.SetActive(!InventoryGO.activeSelf);
-	}
+    }
 
-	/// <summary>
-	/// Add Item to the Player Inventory, if less than Max Inventory Size
-	/// </summary>
-	/// <param name="_rubbish"></param>
-	public void AddItem(Rubbish _rubbish)
-	{
-		if (!IsInventoryFull())
-		{
-			items.Add(_rubbish);
-			ListItems();
-		}
-	}
+    /// <summary>
+    /// Add Item to the Player Inventory, if less than Max Inventory Size
+    /// </summary>
+    /// <param name="_rubbish"></param>
+    public void AddItem(Rubbish _rubbish)
+    {
+        if (!IsInventoryFull())
+        {
+            items.Add(_rubbish);
 
-	/// <summary>
-	/// List the item from internal inventory to UI Inventory
-	/// </summary>
-	public void ListItems()
+            // Use the rubbishTag from the Rubbish object
+            RubbishManager.Instance.AddRubbishTag(_rubbish.rubbishTag);
+
+            ListItems();
+        }
+    }
+
+
+
+    /// <summary>
+    /// List the item from internal inventory to UI Inventory
+    /// </summary>
+    public void ListItems()
 	{
 		// Remove Instantiated Items in Inventory Menu (Objects are duplicated when called from List of Inventory)
 		foreach (Transform item in itemContent)

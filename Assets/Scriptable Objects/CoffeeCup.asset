@@ -15,3 +15,4 @@ MonoBehaviour:
   type: 0
   rubbishName: Coffee Cup
   sprite: {fileID: 21300000, guid: 5cf0ccfeb35504f9ebf96ba4e0b594a5, type: 3}
+  rubbishTag: CoffeeCup

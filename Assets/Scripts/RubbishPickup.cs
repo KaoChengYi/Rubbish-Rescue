@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class RubbishPickup : MonoBehaviour, IInteractable
 {
-	[SerializeField] Rubbish rubbish;
+    [SerializeField] Rubbish rubbish;
 
-	public void Interact()
-	{
-		InventoryManager.Instance.AddItem(rubbish);
+    public void Interact()
+    {
+        InventoryManager.Instance.AddItem(rubbish);
 
-		Destroy(gameObject);
-	}
+        Destroy(gameObject);
+    }
 }

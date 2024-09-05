@@ -15,3 +15,4 @@ MonoBehaviour:
   type: 3
   rubbishName: Plastic Bottle
   sprite: {fileID: 21300000, guid: 9d979b7cd11604b5398b8790e09f2d70, type: 3}
+  rubbishTag: PlasticBottle

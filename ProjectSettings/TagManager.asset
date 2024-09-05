@@ -4,15 +4,18 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Glass
-  - Paper
-  - Plastic
-  - NonRecyclables
   - GlassBin
   - PaperBin
   - PlasticBin
   - NRBin
   - Dirt
+  - SceneChangeTrigger
+  - GlassBottle
+  - PlasticBottle
+  - PlasticContainer
+  - PaperBag
+  - FishBone
+  - CoffeeCup
   layers:
   - Default
   - TransparentFX

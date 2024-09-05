@@ -1,14 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI; // Include this for UI components
 using System.Collections;
+using System.Collections.Generic;
 
 public class TrashSorting : MonoBehaviour
 {
     // Duration for the flicker effect
     public float flickerDuration = 0.5f;
 
-    // Tag for the correct type of trash for this bin
-    public string correctTag;
+    // List of correct tags for this bin
+    public List<string> correctTags = new List<string>();
 
     // Original color of the bin
     private Color _originalColor;
@@ -31,10 +32,11 @@ public class TrashSorting : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Check if the object entering the bin is a trash item
-        if (other.CompareTag("Plastic") || other.CompareTag("Paper") || other.CompareTag("Glass") || other.CompareTag("NonRecyclables"))
+        if (other.CompareTag("PlasticBottle") || other.CompareTag("PlasticContainer") || other.CompareTag("PaperBag") || other.CompareTag("CoffeeCup") || other.CompareTag("GlassBottle"))
         {
-            // Check if the trash tag matches the correct tag set in the Inspector
-            if (other.CompareTag(correctTag))
+
+        // Check if the trash tag matches any of the correct tags set in the Inspector
+        if (correctTags.Contains(other.tag))
             {
                 // Correct bin: Destroy the trash object
                 Destroy(other.gameObject);
@@ -71,12 +73,11 @@ public class TrashSorting : MonoBehaviour
         }
     }
 
-    // Coroutine to flicker the bin color to red
     private IEnumerator FlickerBinColor()
     {
         if (_binRenderer != null)
         {
-            _binRenderer.color = Color.red; // Change bin color to red
+            _binRenderer.color = Color.black;
             yield return new WaitForSeconds(flickerDuration); // Wait for the flicker duration
             _binRenderer.color = _originalColor; // Reset bin color to original
         }

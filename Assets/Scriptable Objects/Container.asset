@@ -15,3 +15,4 @@ MonoBehaviour:
   type: 2
   rubbishName: Container
   sprite: {fileID: 21300000, guid: 1270e32edde624d5d82de38aa956d9b7, type: 3}
+  rubbishTag: Container
