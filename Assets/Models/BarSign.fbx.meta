@@ -1,18 +1,9 @@
 fileFormatVersion: 2
-guid: 0244183cc5f4bd544a0802cf6c81eac8
+guid: 731f705feaaa9b347b05a01dfbc5a980
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-<<<<<<< Updated upstream
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: typeBlinn
-    second: {fileID: -199287022087261038, guid: 1b17bf1dfe03514479eae928cf359733, type: 3}
-=======
   externalObjects: {}
->>>>>>> Stashed changes
   materials:
     materialImportMode: 2
     materialName: 0
