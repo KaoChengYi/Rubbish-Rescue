@@ -27,8 +27,6 @@ public class InventoryManager : MonoBehaviour
 
     private void Update()
 	{
-		Debug.Log(StaticTransfer.testVar);
-
 		// Press to open Inventory
 		if (Input.GetKeyDown(KeyCode.Tab)) InventoryGO.SetActive(!InventoryGO.activeSelf);
     }

@@ -44,7 +44,7 @@ public class MouseInteract : MonoBehaviour
         }
     }
 
-
+    
     // Method to load the new scene
     private void ChangeScene()
     {
