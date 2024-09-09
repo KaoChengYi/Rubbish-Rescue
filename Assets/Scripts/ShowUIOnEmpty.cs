@@ -47,7 +47,7 @@ public class ShowUIOnEmpty : MonoBehaviour
     private bool HasRemainingTrash()
     {
         // tags to check
-        string[] tags = { "PlasticBottle", "PaperBag", "CoffeeCup", "GlassBottle", "PlasticContainer" };
+        string[] tags = { "Dirt", "FishBone", "Banana", "PlasticBottle", "PaperBag", "CoffeeCup", "GlassBottle", "PlasticContainer" };
 
         foreach (string tag in tags)
         {

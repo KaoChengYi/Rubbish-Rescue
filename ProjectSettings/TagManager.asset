@@ -16,6 +16,7 @@ TagManager:
   - PaperBag
   - FishBone
   - CoffeeCup
+  - Banana
   layers:
   - Default
   - TransparentFX

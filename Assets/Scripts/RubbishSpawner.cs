@@ -8,6 +8,8 @@ public class RubbishSpawner : MonoBehaviour
     public GameObject plasticContainerPrefab;
     public GameObject coffeeCupPrefab;
     public GameObject paperBagPrefab;
+    public GameObject bananaPrefab;
+    public GameObject fishBonePrefab;
 
     // Parameters for spawn area
     public Vector3 spawnAreaCenter = new Vector3(0, 0, 0);
@@ -60,6 +62,10 @@ public class RubbishSpawner : MonoBehaviour
                 return coffeeCupPrefab;
             case "PaperBag":
                 return paperBagPrefab;
+            case "Banana":
+                return bananaPrefab;
+            case "FishBone":
+                return fishBonePrefab;
             default:
                 Debug.LogWarning($"No prefab assigned for tag: {tag}");
                 return null;

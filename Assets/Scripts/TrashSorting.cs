@@ -32,7 +32,7 @@ public class TrashSorting : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Check if the object entering the bin is a trash item
-        if (other.CompareTag("PlasticBottle") || other.CompareTag("PlasticContainer") || other.CompareTag("PaperBag") || other.CompareTag("CoffeeCup") || other.CompareTag("GlassBottle"))
+        if (other.CompareTag("PlasticBottle") || other.CompareTag("FishBone") || other.CompareTag("Banana") || other.CompareTag("PlasticContainer") || other.CompareTag("PaperBag") || other.CompareTag("CoffeeCup") || other.CompareTag("GlassBottle"))
         {
 
         // Check if the trash tag matches any of the correct tags set in the Inspector
