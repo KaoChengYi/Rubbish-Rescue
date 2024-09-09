@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6413465, g: 0.86585724, b: 0.8807889, a: 1}
+  m_IndirectSpecularColor: {r: 0.64134645, g: 0.8658572, b: 0.880789, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -41371,6 +41371,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfcbaadf358b92c4687e01194d447cd1, type: 3}
+--- !u!1001 &3288488462885340990
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6276353220111727188, guid: 26710eefa58c2bd4e9c558f94cd9551c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276353220111727188, guid: 26710eefa58c2bd4e9c558f94cd9551c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.24999905
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276353220111727188, guid: 26710eefa58c2bd4e9c558f94cd9551c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -79.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276353220111727188, guid: 26710eefa58c2bd4e9c558f94cd9551c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6916285
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276353220111727188, guid: 26710eefa58c2bd4e9c558f94cd9551c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276353220111727188, guid: 26710eefa58c2bd4e9c558f94cd9551c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7222534
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276353220111727188, guid: 26710eefa58c2bd4e9c558f94cd9551c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276353220111727188, guid: 26710eefa58c2bd4e9c558f94cd9551c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276353220111727188, guid: 26710eefa58c2bd4e9c558f94cd9551c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 92.482
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276353220111727188, guid: 26710eefa58c2bd4e9c558f94cd9551c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6652316569107112174, guid: 26710eefa58c2bd4e9c558f94cd9551c, type: 3}
+      propertyPath: m_Name
+      value: GumBallMachine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 26710eefa58c2bd4e9c558f94cd9551c, type: 3}
 --- !u!1001 &4220249240153006549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41867,3 +41924,4 @@ SceneRoots:
   - {fileID: 468625706}
   - {fileID: 753300515}
   - {fileID: 630445237}
+  - {fileID: 3288488462885340990}
