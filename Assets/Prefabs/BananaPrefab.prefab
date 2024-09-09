@@ -116,7 +116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cd7984bcfd2f1634388c9da993a6b6be, type: 3}
       propertyPath: m_Name
-      value: PlasticBottlePrefab 1
+      value: BananaPrefab
       objectReference: {fileID: 0}
     - target: {fileID: 6954458346255901342, guid: cd7984bcfd2f1634388c9da993a6b6be, type: 3}
       propertyPath: m_Enabled
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c1ca274fbd64a43952b6f1771c4cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rubbish: {fileID: 11400000, guid: 5fba669aec665a645bda625fb16d66ac, type: 2}
+  rubbish: {fileID: 11400000, guid: fb8c1a0740221c04986bd6614442bf0f, type: 2}
 --- !u!4 &9045560922348190189 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6227363874851166110, guid: cd7984bcfd2f1634388c9da993a6b6be, type: 3}
