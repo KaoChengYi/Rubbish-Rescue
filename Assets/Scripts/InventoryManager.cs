@@ -23,6 +23,9 @@ public class InventoryManager : MonoBehaviour
 
 	private void Start()
 	{
+		items.Clear();
+		RubbishManager.Instance.ClearRubbishData();
+		ListItems();
     }
 
     private void Update()

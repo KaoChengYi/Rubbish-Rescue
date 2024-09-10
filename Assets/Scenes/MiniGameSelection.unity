@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 114196061}
   - component: {fileID: 114196060}
   - component: {fileID: 114196059}
+  - component: {fileID: 114196062}
   m_Layer: 5
   m_Name: Button (Legacy) (1)
   m_TagString: Untagged
@@ -238,7 +239,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 327.8083, y: -881}
+  m_AnchoredPosition: {x: 468, y: -816}
   m_SizeDelta: {x: 391.4727, y: 73.4011}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &114196059
@@ -284,7 +285,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114196060}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114196057}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &114196060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,6 +336,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114196057}
   m_CullTransparentMesh: 1
+--- !u!114 &114196062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114196057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3d23c21b4f579438fce17b681678af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: PaperMiniGame1
 --- !u!1001 &146668546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -345,7 +371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e5b936a29270ddd449b801d1cd327895, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.4
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e5b936a29270ddd449b801d1cd327895, type: 3}
       propertyPath: m_LocalPosition.y
@@ -512,7 +538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -25, y: -881}
+  m_AnchoredPosition: {x: -7, y: -816}
   m_SizeDelta: {x: 391.4727, y: 73.4011}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &888443095
@@ -559,9 +585,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 888443098}
+      - m_Target: {fileID: 888443093}
         m_TargetAssemblyTypeName: SceneTransition, Assembly-CSharp
-        m_MethodName: LoadNextScene
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -621,7 +647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3d23c21b4f579438fce17b681678af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: MiniGame3
+  sceneName: PlasticMiniGame1
 --- !u!1 &1035404380
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,6 +726,137 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035404380}
+  m_CullTransparentMesh: 1
+--- !u!1 &1247494997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1247494999}
+  - component: {fileID: 1247494998}
+  m_Layer: 0
+  m_Name: ButtonController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1247494998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247494997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff8ef0545eb33e4f8a10de4126ab72c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 888443095}
+  - {fileID: 114196059}
+  - {fileID: 1519235590}
+  sceneNames:
+  - PlasticMiniGame1
+  - PaperMiniGame1
+  - GlassMiniGame1
+--- !u!4 &1247494999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247494997}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7099, y: 3.7829, z: 0.6199158}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1405005865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1405005866}
+  - component: {fileID: 1405005868}
+  - component: {fileID: 1405005867}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1405005866
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405005865}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1505601508}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -162, y: 24}
+  m_SizeDelta: {x: 988.5833, y: 88.2418}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1405005867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405005865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 33
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 49
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Choose the process you'd like to see! (or something like that)
+--- !u!222 &1405005868
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405005865}
   m_CullTransparentMesh: 1
 --- !u!1 &1505601504
 GameObject:
@@ -798,6 +955,7 @@ RectTransform:
   - {fileID: 888443094}
   - {fileID: 114196058}
   - {fileID: 1519235589}
+  - {fileID: 1405005866}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -817,6 +975,7 @@ GameObject:
   - component: {fileID: 1519235592}
   - component: {fileID: 1519235591}
   - component: {fileID: 1519235590}
+  - component: {fileID: 1519235593}
   m_Layer: 5
   m_Name: Button (Legacy) (2)
   m_TagString: Untagged
@@ -841,7 +1000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -384.23737, y: -881}
+  m_AnchoredPosition: {x: -485, y: -816}
   m_SizeDelta: {x: 391.4727, y: 73.4011}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1519235590
@@ -887,7 +1046,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1519235591}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1519235588}
+        m_TargetAssemblyTypeName: SceneTransition, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1519235591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -926,6 +1097,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519235588}
   m_CullTransparentMesh: 1
+--- !u!114 &1519235593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519235588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3d23c21b4f579438fce17b681678af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: GlassMiniGame1
 --- !u!1 &1724369657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,3 +1373,4 @@ SceneRoots:
   - {fileID: 1505601508}
   - {fileID: 2081587696}
   - {fileID: 146668546}
+  - {fileID: 1247494999}

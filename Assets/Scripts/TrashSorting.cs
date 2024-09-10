@@ -32,7 +32,7 @@ public class TrashSorting : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Check if the object entering the bin is a trash item
-        if (other.CompareTag("PlasticBottle") || other.CompareTag("PlasticContainer") || other.CompareTag("PaperBag") || other.CompareTag("CoffeeCup") || other.CompareTag("GlassBottle"))
+        if (other.CompareTag("PlasticBottle") || other.CompareTag("FishBone") || other.CompareTag("Banana") || other.CompareTag("PlasticContainer") || other.CompareTag("PaperBag") || other.CompareTag("CoffeeCup") || other.CompareTag("GlassBottle"))
         {
 
         // Check if the trash tag matches any of the correct tags set in the Inspector
@@ -60,16 +60,24 @@ public class TrashSorting : MonoBehaviour
         // Wait for flicker effect to complete
         yield return new WaitForSeconds(flickerDuration);
 
-        // Reset trash position regardless of dragging state
-        DragDrop dragDrop = trash.GetComponent<DragDrop>();
-        if (dragDrop != null)
+        // Check if the trash object is still valid
+        if (trash != null)
         {
-            trash.transform.position = dragDrop._startPosition;
-            Debug.Log("Resetting position to: " + dragDrop._startPosition);
+            // Reset trash position regardless of dragging state
+            DragDrop dragDrop = trash.GetComponent<DragDrop>();
+            if (dragDrop != null)
+            {
+                trash.transform.position = dragDrop._startPosition;
+                Debug.Log("Resetting position to: " + dragDrop._startPosition);
+            }
+            else
+            {
+                Debug.LogWarning("DragDrop component not found on trash.");
+            }
         }
         else
         {
-            Debug.LogWarning("DragDrop component not found on trash.");
+            Debug.LogWarning("Trash object has been destroyed, cannot reset position.");
         }
     }
 
