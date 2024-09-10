@@ -24,6 +24,7 @@ public class IbisIan : MonoBehaviour, IInteractable
 		dialogueText.gameObject.SetActive(true);
 		dialogueText.text = dialogues[dialoguesIndex];
 		inConversation = true;
+		AdvanceDialogueProgression();
 
 		yield return new WaitForSeconds(dialogueActiveTime);
 
@@ -34,6 +35,6 @@ public class IbisIan : MonoBehaviour, IInteractable
 
 	public void AdvanceDialogueProgression()
 	{
-		dialoguesIndex++;
+		if (dialoguesIndex < dialogues.Length - 1) dialoguesIndex++;
 	}
 }

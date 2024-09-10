@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class FirstPersonMovement : MonoBehaviour
 {
+    public static Vector3 spawnLocation; //Added
+
     public float speed = 5;
 
     [Header("Running")]
@@ -23,10 +25,17 @@ public class FirstPersonMovement : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    void Start()
     {
-        // Update IsRunning from input.
-        IsRunning = canRun && Input.GetKey(runningKey);
+        if (spawnLocation != Vector3.zero) transform.position = spawnLocation; //Added
+	}
+
+	void FixedUpdate()
+    {
+        spawnLocation = transform.position; //Added
+
+		// Update IsRunning from input.
+		IsRunning = canRun && Input.GetKey(runningKey);
 
         // Get targetMovingSpeed.
         float targetMovingSpeed = IsRunning ? runSpeed : speed;

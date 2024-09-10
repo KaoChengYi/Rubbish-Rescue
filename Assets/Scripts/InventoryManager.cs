@@ -18,7 +18,7 @@ public class InventoryManager : MonoBehaviour
 
 	private void Awake()
 	{
-      Instance = this;
+		Instance = this;
     }
 
 	private void Start()
@@ -32,7 +32,7 @@ public class InventoryManager : MonoBehaviour
 	{
 		// Press to open Inventory
 		if (Input.GetKeyDown(KeyCode.Tab)) InventoryGO.SetActive(!InventoryGO.activeSelf);
-    }
+	}
 
     /// <summary>
     /// Add Item to the Player Inventory, if less than Max Inventory Size

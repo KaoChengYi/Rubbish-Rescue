@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlasticMiniGameEnd.unity
     guid: 55f4eed1cea173f4586fcfa0d7d56704
+  - enabled: 1
+    path: Assets/Scenes/TestScene.unity
+    guid: e25ea08de63dde74fb1b71de7bb3c93e
   m_configObjects: {}

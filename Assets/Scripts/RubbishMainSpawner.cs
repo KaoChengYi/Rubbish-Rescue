@@ -16,9 +16,14 @@ public class RubbishMainSpawner : MonoBehaviour
 
 	private void Start()
 	{
+		bool hasSpawnedAllType = false;
+		int typesSpawned = 0;
+
+
 		for (int i = 0; i < spawnRubbishAmount; i++)
 		{
 			RaycastHit hit;
+			Vector3 spawnPoint;
 
 			while (true)
 			{
@@ -27,12 +32,15 @@ public class RubbishMainSpawner : MonoBehaviour
 				float pointY = (spawnPosition1.position.y + spawnPosition2.position.y) / 2;
 				float pointZ = Random.Range(spawnPosition1.position.z, spawnPosition2.position.z);
 
-				Vector3 spawnPoint = new(pointX, pointY, pointZ);
-				
-				if (Physics.Raycast(new(spawnPoint, Vector3.down), out hit, 250f, spawnFloorMask))
+				spawnPoint = new(pointX, pointY, pointZ);
+
+				Physics.Raycast(new(spawnPoint, Vector3.down), out hit, 250f);
+
+				int hitLayer = hit.collider.gameObject.layer;
+
+				if ((spawnFloorMask.value & (1 << hitLayer)) != 0)
 				{
 					// Hits the FloorMask :^)
-					Debug.DrawRay(spawnPoint, Vector3.down * 250f, Color.cyan, 16f);
 					break;
 				} else
 				{
@@ -40,10 +48,27 @@ public class RubbishMainSpawner : MonoBehaviour
 					Debug.DrawRay(spawnPoint, Vector3.down * 250f, Color.red, 16f);
 				}
 			}
-			
-			// Get random index of rubbish, then spawn at point hit
-			int rubbishIndex = Random.Range(1, spawnRubbishGO.Length) - 1;
-			Debug.Log("rubbishIndex: " + rubbishIndex);
+
+			int rubbishIndex;
+			if (!hasSpawnedAllType)
+			{
+				// Force Spawn the first 3 rubbish from List
+				rubbishIndex = typesSpawned;
+				typesSpawned++;
+
+				Debug.DrawRay(spawnPoint, Vector3.down * 250f, Color.blue, 16f);
+
+				// Check if the first 3 types of Rubbish are spawned
+				if (typesSpawned >= 3) hasSpawnedAllType = true;
+
+			} else
+			{
+				// Get random index of rubbish instead, then spawn at point hit
+				rubbishIndex = Random.Range(0, spawnRubbishGO.Length);
+
+				Debug.DrawRay(spawnPoint, Vector3.down * 250f, Color.cyan, 16f);
+			}
+
 			Instantiate(spawnRubbishGO[rubbishIndex], hit.point, Quaternion.identity, spawnParent.transform);
 		}
 	}
