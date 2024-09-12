@@ -8,8 +8,10 @@ public class RubbishPickup : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        InventoryManager.Instance.AddItem(rubbish);
+		// Don't do anything if the inventory is full
+		if (InventoryManager.Instance.IsInventoryFull()) return;
 
+        InventoryManager.Instance.AddItem(rubbish);
         Destroy(gameObject);
     }
 }
