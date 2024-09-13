@@ -14,7 +14,9 @@ public class PauseMenuManager : MonoBehaviour
 
 	[SerializeField] FirstPersonMovement firstPersonMovement;
     [SerializeField] FirstPersonLook firstPersonLook;
-    
+    // Name of credits scene
+    [SerializeField] string creditsSceneName;
+
     private bool isPaused = false;
 
 	private void Start()
@@ -29,6 +31,13 @@ public class PauseMenuManager : MonoBehaviour
             if (!isPaused) Pause();
             else Resume();
         }
+    }
+
+
+    public void Credits()
+    {
+        // Load the scene specified in the creditsSceneName variable
+        SceneManager.LoadScene(creditsSceneName);
     }
 
     public void Pause()
