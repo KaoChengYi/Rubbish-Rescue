@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6413465, g: 0.86585724, b: 0.8807889, a: 1}
+  m_IndirectSpecularColor: {r: 0.64134645, g: 0.8658572, b: 0.880789, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11307,7 +11307,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactRange: 4
-  sceneNameToLoad: Sorting
   playerCamera: {fileID: 1178387431}
 --- !u!114 &451168055 stripped
 MonoBehaviour:
@@ -11771,6 +11770,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1655335980}
     m_Modifications:
+    - target: {fileID: -7107263370787098704, guid: dabf51c4c9cf52e4098605540eaefce5, type: 3}
+      propertyPath: pickupSoundName
+      value: '"pickupPaper"'
+      objectReference: {fileID: 0}
     - target: {fileID: 6021599994244494948, guid: dabf51c4c9cf52e4098605540eaefce5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.2
@@ -11988,6 +11991,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476184924}
   m_Mesh: {fileID: 4465315455489950968, guid: 1b17bf1dfe03514479eae928cf359733, type: 3}
+--- !u!1 &477201302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 477201304}
+  - component: {fileID: 477201303}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &477201303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477201302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1729ee4ea5d6d274780373ae3698fe97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &477201304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477201302}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 830161819}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &478330776 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 136779370907258574, guid: 1b17bf1dfe03514479eae928cf359733, type: 3}
@@ -13041,7 +13088,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517135959}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -14935,7 +14982,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630445235}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -15719,6 +15766,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1655335980}
     m_Modifications:
+    - target: {fileID: -629626693724324542, guid: 4591b5fef263b0b46a1b8060c94d09a6, type: 3}
+      propertyPath: pickupSoundName
+      value: '"pickupPaper"'
+      objectReference: {fileID: 0}
     - target: {fileID: 6021599994244494948, guid: 4591b5fef263b0b46a1b8060c94d09a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.13
@@ -16963,6 +17014,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1655335980}
     m_Modifications:
+    - target: {fileID: -7107263370787098704, guid: 7fe1f84fe28e500499aa11417892623f, type: 3}
+      propertyPath: pickupSoundName
+      value: '"pickupPaper"'
+      objectReference: {fileID: 0}
     - target: {fileID: 6021599994244494948, guid: 7fe1f84fe28e500499aa11417892623f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.39
@@ -18069,6 +18124,39 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3369316746193770658, guid: 1b17bf1dfe03514479eae928cf359733, type: 3}
+--- !u!1 &830161818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 830161819}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &830161819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830161818}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 477201304}
+  - {fileID: 1151197152}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &830692634 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1966778018708412531, guid: cfcbaadf358b92c4687e01194d447cd1, type: 3}
@@ -23604,6 +23692,160 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -336520244429124228, guid: 1b17bf1dfe03514479eae928cf359733, type: 3}
+--- !u!1 &1151197151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1151197152}
+  - component: {fileID: 1151197153}
+  - component: {fileID: 1151197154}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1151197152
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151197151}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 830161819}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1151197153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151197151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7583b35b7f9afff4a92ffa308bbdd1f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: pickupPaper
+    clip: {fileID: 8300000, guid: 11fd5ac43b9cb0f46b8fde06f9dad76a, type: 3}
+    volume: 0.7
+    pitch: 1
+    volumeVariance: 0.2
+    pitchVariance: 0.3
+  - name: pickupPlastic
+    clip: {fileID: 8300000, guid: 11a688bbaba42474aaff149090e2e5b1, type: 3}
+    volume: 0.7
+    pitch: 1
+    volumeVariance: 0.2
+    pitchVariance: 0.3
+--- !u!82 &1151197154
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151197151}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: bea9922bcef9a1c49aced5c11499869b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.9
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1151337066 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 858875057480334876, guid: 1b17bf1dfe03514479eae928cf359733, type: 3}
@@ -29120,6 +29362,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1655335980}
     m_Modifications:
+    - target: {fileID: -651525157511485753, guid: 8c334529361c48041ae1dece4a243141, type: 3}
+      propertyPath: pickupSoundName
+      value: '"pickupPaper"'
+      objectReference: {fileID: 0}
     - target: {fileID: 6021599994244494948, guid: 8c334529361c48041ae1dece4a243141, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.57
@@ -33228,6 +33474,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PaperBag
       objectReference: {fileID: 0}
+    - target: {fileID: 8713562945243118310, guid: 1cd774d7c874ec647af67a062aa35387, type: 3}
+      propertyPath: pickupSoundName
+      value: '"pickupPaper"'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34975,6 +35225,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1655335980}
     m_Modifications:
+    - target: {fileID: -8156208203541007543, guid: c056c3f84ecb08d47b1b12aec9651365, type: 3}
+      propertyPath: pickupSoundName
+      value: '"pickupPaper"'
+      objectReference: {fileID: 0}
     - target: {fileID: 6021599994244494948, guid: c056c3f84ecb08d47b1b12aec9651365, type: 3}
       propertyPath: m_LocalPosition.x
       value: -28.78
@@ -41584,6 +41838,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1655335980}
     m_Modifications:
+    - target: {fileID: -7107263370787098704, guid: 9ed6d8060f6f6cc4e8cc565bc1785935, type: 3}
+      propertyPath: pickupSoundName
+      value: '"pickupPaper"'
+      objectReference: {fileID: 0}
     - target: {fileID: 6021599994244494948, guid: 9ed6d8060f6f6cc4e8cc565bc1785935, type: 3}
       propertyPath: m_LocalPosition.x
       value: -31.06
@@ -42380,13 +42638,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86da31ff084b2774088281cd1552f5c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueActiveTime: 4
+  dialogueActiveTime: 6
   dialogueText: {fileID: 1399813230}
   dialogues:
-  - 'Heya! I''m Ian the ibis. '
-  - Collect trash and hand them over to the recycle bin nearby!
-  - You can only hold 12 rubbish at a time!
-  - Head to the recycle bins with your inventory full to recycle them!
+  - Hey kid! The name's Ian. Bouth Sank is my home, and I need your help!
+  - Everyone's enjoying the parklands, but they've left their rubbish around! A lot
+    of it can be recycled too.
+  - Can you help me collect any rubbish you see? When you have 12 items, head over
+    to the recycle bins to help sort them.
 --- !u!1 &2110535877 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4987352189107229128, guid: 1b17bf1dfe03514479eae928cf359733, type: 3}
@@ -43792,7 +44051,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3754465393506845701}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -44942,6 +45201,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 705507995}
   - {fileID: 1151543460230950057}
+  - {fileID: 830161819}
   - {fileID: 1256773913}
   - {fileID: 451168049}
   - {fileID: 402862531}

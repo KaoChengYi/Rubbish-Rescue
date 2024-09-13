@@ -15,6 +15,10 @@ public class TrashSorting : MonoBehaviour
     private Color _originalColor;
     private SpriteRenderer _binRenderer;
 
+    // the audio manager for sound effects
+    //public string pickupSoundName;
+    private AudioManager audioManager;
+
     private void Start()
     {
         // Get the SpriteRenderer component to change bin color
@@ -27,6 +31,14 @@ public class TrashSorting : MonoBehaviour
         {
             Debug.LogError("SpriteRenderer component not found on " + gameObject.name);
         }
+
+        // set up audio manager
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.LogError("No AudioManager found in the scene.");
+            return;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -38,12 +50,20 @@ public class TrashSorting : MonoBehaviour
         // Check if the trash tag matches any of the correct tags set in the Inspector
         if (correctTags.Contains(other.tag))
             {
+                // correct bin: play audio TODO custom sound per rubbish type
+                //audioManager.PlaySound(pickupSoundName);
+                audioManager.PlaySound("sortCorrect");
+
                 // Correct bin: Destroy the trash object
                 Destroy(other.gameObject);
                 Debug.Log("Correct bin!");
             }
             else
             {
+                // correct bin: play audio TODO custom sound per rubbish item
+                //audioManager.PlaySound(pickupSoundName);
+                audioManager.PlaySound("sortWrong");
+
                 // Incorrect bin: Reset position and flicker bin color
                 StartCoroutine(HandleIncorrectTrash(other));
                 Debug.Log("Incorrect bin!");
