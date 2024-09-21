@@ -21063,6 +21063,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CloudMesh (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7866160372851192040, guid: 3d8931848ef098843b0d825343ebc967, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6296d3f1c427b6e4992b7e749e8f28ca, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32746,6 +32750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CloudMesh (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7866160372851192040, guid: 3d8931848ef098843b0d825343ebc967, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6296d3f1c427b6e4992b7e749e8f28ca, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33909,6 +33917,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CloudMesh (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7866160372851192040, guid: 3d8931848ef098843b0d825343ebc967, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f65b55442ae30684296f2e51d6f1fe27, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36203,6 +36215,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CloudMesh (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7866160372851192040, guid: 3d8931848ef098843b0d825343ebc967, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f65b55442ae30684296f2e51d6f1fe27, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40465,6 +40481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CloudMesh (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7866160372851192040, guid: 3d8931848ef098843b0d825343ebc967, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6296d3f1c427b6e4992b7e749e8f28ca, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42182,6 +42202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CloudMesh (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7866160372851192040, guid: 3d8931848ef098843b0d825343ebc967, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f65b55442ae30684296f2e51d6f1fe27, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
