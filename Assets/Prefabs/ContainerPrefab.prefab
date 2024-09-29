@@ -118,6 +118,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ContainerPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd7984bcfd2f1634388c9da993a6b6be, type: 3}
+      propertyPath: m_TagString
+      value: PlasticContainer
+      objectReference: {fileID: 0}
     - target: {fileID: 6954458346255901342, guid: cd7984bcfd2f1634388c9da993a6b6be, type: 3}
       propertyPath: m_Enabled
       value: 0
