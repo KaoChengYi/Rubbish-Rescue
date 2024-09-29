@@ -17,6 +17,7 @@ TagManager:
   - FishBone
   - CoffeeCup
   - Banana
+  - ShreddedPaper
   layers:
   - Default
   - TransparentFX

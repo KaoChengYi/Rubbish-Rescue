@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3d23c21b4f579438fce17b681678af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: MiniQuizPlastic
+  sceneName: MiniQuizPaper
 --- !u!114 &251302540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,7 +617,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9d979b7cd11604b5398b8790e09f2d70, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a17dd3849936f4f399590d49a2648d83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -637,7 +637,7 @@ Transform:
   m_GameObject: {fileID: 979225987}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.53, y: -0.17, z: 0}
+  m_LocalPosition: {x: -0.36, y: 0.17, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -713,7 +713,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Paper Recycling Process Complete!
+  m_Text: Plastic Recycling Process Complete!
 --- !u!222 &1438196878
 CanvasRenderer:
   m_ObjectHideFlags: 0

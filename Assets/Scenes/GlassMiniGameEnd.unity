@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3d23c21b4f579438fce17b681678af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Scene1
+  sceneName: MiniQuizGlass
 --- !u!114 &251302540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -860,7 +860,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Return
+  m_Text: Next
 --- !u!222 &1709226170
 CanvasRenderer:
   m_ObjectHideFlags: 0
