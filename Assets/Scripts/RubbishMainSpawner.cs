@@ -19,6 +19,7 @@ public class RubbishMainSpawner : MonoBehaviour
 		bool hasSpawnedAllType = false;
 		int typesSpawned = 0;
 
+		if (RecycleBin.recycleCenterProgress == 3) return;
 
 		for (int i = 0; i < spawnRubbishAmount; i++)
 		{

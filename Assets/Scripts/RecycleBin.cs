@@ -9,15 +9,21 @@ public class RecycleBin : MonoBehaviour, IInteractable
 {
 	[SerializeField] string sceneName;
 
-    [SerializeField] Slider recycleCenterBar;
-	[SerializeField] GameObject[] recycleCenterProgressBarGOs; //Add locks
-	[SerializeField] GameObject[] locks;
+	[SerializeField] GameObject[] recycleCenterProgressBarGOs;
+	[SerializeField] GameObject[] locksGO;
+
+	[SerializeField] GameObject openGO;
+	[SerializeField] GameObject closeGO;
+	[SerializeField] GameObject plankGO;
+	[SerializeField] GameObject brightCube;
+	[SerializeField] BoxCollider doorBoxCollider;
+	[SerializeField] Animator doorAnimator;
 
     public static int recycleCenterProgress = 0;
 
 	private void Start()
 	{
-		UpdateRecycleBinBar(recycleCenterProgress);
+		UpdateEnvironmentGO(recycleCenterProgress);
 	}
 
 
@@ -25,7 +31,7 @@ public class RecycleBin : MonoBehaviour, IInteractable
     {
 		if (Input.GetKeyDown(KeyCode.F1)) {
 			recycleCenterProgress++;
-            UpdateRecycleBinBar(recycleCenterProgress);
+            UpdateEnvironmentGO(recycleCenterProgress);
         }
     }
 
@@ -44,16 +50,45 @@ public class RecycleBin : MonoBehaviour, IInteractable
 			return;
 		}
 	}
-	void UpdateRecycleBinBar(int _value)
+	void UpdateEnvironmentGO(int _value)
 	{
         recycleCenterProgressBarGOs[_value].SetActive(true);
 
-        for (int i = 0; i < recycleCenterProgressBarGOs.Length; i++)
+        for (int i = 0; i < 3; i++)
 		{
             if (_value != i)
 			{
 				recycleCenterProgressBarGOs[i].SetActive(false);
             }
-        }
+		}
+
+		switch (_value)
+		{
+			case 1:
+				locksGO[0].SetActive(false);
+				break;
+			case 2:
+				locksGO[0].SetActive(false);
+				locksGO[1].SetActive(false);
+				break; 
+			case 3:
+				brightCube.SetActive(true);
+
+				locksGO[0].SetActive(false);
+				locksGO[1].SetActive(false);
+				locksGO[2].SetActive(false);
+
+				openGO.SetActive(true);
+				plankGO.SetActive(false);
+
+				closeGO.SetActive(false);
+
+				doorBoxCollider.enabled = false;
+
+				doorAnimator.enabled = true;
+				break; 
+			default:
+				break;
+		}
     }
 }
