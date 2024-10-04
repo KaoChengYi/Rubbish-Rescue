@@ -9,32 +9,51 @@ public class RecycleBin : MonoBehaviour, IInteractable
 {
 	[SerializeField] string sceneName;
 
-    //[SerializeField] Text recycleCenterText;
     [SerializeField] Slider recycleCenterBar;
+	[SerializeField] GameObject[] recycleCenterProgressBarGOs; //Add locks
+	[SerializeField] GameObject[] locks;
 
-	public static int recycleCenterProgressBar = 0;
+    public static int recycleCenterProgress = 0;
 
 	private void Start()
 	{
-		UpdateRecycleBinBar();
+		UpdateRecycleBinBar(recycleCenterProgress);
 	}
 
 
-	public void Interact()
+    private void Update()
+    {
+		if (Input.GetKeyDown(KeyCode.F1)) {
+			recycleCenterProgress++;
+            UpdateRecycleBinBar(recycleCenterProgress);
+        }
+    }
+
+    public void Interact()
 	{
 		// Return if the inventory is not full
 		if (!InventoryManager.Instance.IsInventoryFull()) 
 			return;
 
 		// Increase Recycling Center Progress by 1
-		if (recycleCenterProgressBar < 3) 
-			recycleCenterProgressBar++;
+		if (recycleCenterProgress < 3)
+		{
+			recycleCenterProgress++;
+			SceneManager.LoadScene(sceneName);
 
-		// Load Minigame Scene
-		SceneManager.LoadScene(sceneName);
+			return;
+		}
 	}
-	void UpdateRecycleBinBar()
+	void UpdateRecycleBinBar(int _value)
 	{
-		recycleCenterBar.value = recycleCenterProgressBar;
-	}
+        recycleCenterProgressBarGOs[_value].SetActive(true);
+
+        for (int i = 0; i < recycleCenterProgressBarGOs.Length; i++)
+		{
+            if (_value != i)
+			{
+				recycleCenterProgressBarGOs[i].SetActive(false);
+            }
+        }
+    }
 }
