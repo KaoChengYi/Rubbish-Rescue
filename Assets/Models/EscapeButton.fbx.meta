@@ -3,7 +3,22 @@ guid: 2e2868d8172d3bf49a81a81a40839930
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EscGray
+    second: {fileID: 2100000, guid: 57a664a9dab43db43920004f027d5555, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SelectEColour2
+    second: {fileID: 2100000, guid: 408a6c9313fac704cad4518172121af5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 3bb7c0e65437ef741bb1188719177ca3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
