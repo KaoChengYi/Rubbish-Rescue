@@ -20,7 +20,11 @@ public enum SoundType
     BALLOONSTAND,
     GUMBALLSHOOT,
     GUMBALLKID,
-    GUMBALLMAN
+    GUMBALLMAN,
+    
+    UIHOVER,
+    UIPLAY,
+
     //USE,
     //PICKUPPAPER,
     //PICKUPGLASS,
