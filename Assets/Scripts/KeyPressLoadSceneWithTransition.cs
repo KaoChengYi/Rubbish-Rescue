@@ -1,31 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
-public class SceneTransitionWithMusic : MonoBehaviour
+public class KeyPressLoadSceneWithTransition : MonoBehaviour
 {
-    // Name of the scene to load
-    public string sceneName;
-
-    //private static MusicTransition instance;
+    [SerializeField] string sceneName;
 
     public float waitTime;
     public Animator musicAnim;
     public Animator transitionAnim;
 
-    public void LoadNextScene()
+    void Update()
     {
-        // start coroutine to fade out music
-        StartCoroutine(ChangeScene());
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            StartCoroutine(ChangeScene());
+        }
     }
-
     IEnumerator ChangeScene()
     {
         musicAnim.SetTrigger("FadeOut");
         transitionAnim.SetTrigger("SceneFadeOut");
         SoundManager.PlaySound(SoundType.UIPLAY);
         yield return new WaitForSeconds(waitTime);
-        // Load the scene specified in the sceneName variable
         SceneManager.LoadScene(sceneName);
     }
 }

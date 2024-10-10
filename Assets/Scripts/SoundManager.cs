@@ -92,6 +92,12 @@ public class SoundManager : MonoBehaviour
         //Debug.Log("SoundManager: attempted to play sound " + sound.ToString() + " at volume " + volume.ToString());
         //Debug.Log("SoundManager: attempted to play sound " + sound.ToString() + " at volume " + volume.ToString() + " and pitch " + pitch.ToString());
     }
+    public void PlayUISoundHoverBtn()
+    {
+        PlaySound(SoundType.UIHOVER);
+        Debug.Log("SoundManager: MoueEnter Trigger - sound played " + SoundType.UIHOVER.ToString());
+    }
+
     public static void Play3DSound(SoundType sound, AudioSource targetAudioSource)
     {
         // load SoundList to play
