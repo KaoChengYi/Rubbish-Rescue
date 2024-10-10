@@ -14,6 +14,13 @@ public enum SoundType
     //GAMECONGRATS,
 
     PICKUPITEM,
+    FISH,
+    KITEKID,
+    APPLEKID,
+    BALLOONSTAND,
+    GUMBALLSHOOT,
+    GUMBALLKID,
+    GUMBALLMAN
     //USE,
     //PICKUPPAPER,
     //PICKUPGLASS,
@@ -78,7 +85,31 @@ public class SoundManager : MonoBehaviour
         // play random sound from SoundList
         AudioClip randomClip = clips[UnityEngine.Random.Range(0, clips.Length)];
         instance.audioSource.PlayOneShot(randomClip, volume);
-        Debug.Log("SoundManager: attempted to play sound " + sound.ToString() + " at volume " + volume.ToString());
+        //Debug.Log("SoundManager: attempted to play sound " + sound.ToString() + " at volume " + volume.ToString());
+        //Debug.Log("SoundManager: attempted to play sound " + sound.ToString() + " at volume " + volume.ToString() + " and pitch " + pitch.ToString());
+    }
+    public static void Play3DSound(SoundType sound, AudioSource targetAudioSource)
+    {
+        // load SoundList to play
+        AudioClip[] clips = instance.soundList[(int)sound].Sounds;
+        // get volume and pitch
+        float volumeVariance = instance.soundList[(int)sound].VolumeVariance;
+        float volume = instance.soundList[(int)sound].Volume * (1 + UnityEngine.Random.Range(-volumeVariance / 2f, volumeVariance / 2f));
+        //float pitchVariance = instance.soundList[(int)sound].PitchVariance;
+        //float pitch = instance.soundList[(int)sound].Pitch * (1 + UnityEngine.Random.Range(-pitchVariance / 2f, pitchVariance / 2f));
+
+        // do not play if no clips added to SoundList
+        if (clips.Length <= 0)
+        {
+            Debug.LogWarning("SoundManager: No sound clips detected in SoundList - sound not played " + sound.ToString());
+            return;
+        }
+        if (volume == 0) Debug.LogWarning("SoundManager: Volume is set to 0 for sound " + sound.ToString());
+
+        // play random sound from SoundList
+        AudioClip randomClip = clips[UnityEngine.Random.Range(0, clips.Length)];
+        targetAudioSource.PlayOneShot(randomClip, volume);
+        //Debug.Log("SoundManager: attempted to play sound " + sound.ToString() + " at volume " + volume.ToString());
         //Debug.Log("SoundManager: attempted to play sound " + sound.ToString() + " at volume " + volume.ToString() + " and pitch " + pitch.ToString());
     }
 
