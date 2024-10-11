@@ -1549,6 +1549,14 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 4e3368788d8407c429d5155f1bbccc95, type: 3}
     Volume: 1
     VolumeVariance: 0
+  - name: GAMECORRECT
+    sounds: []
+    Volume: 0
+    VolumeVariance: 0
+  - name: GAMEWRONG
+    sounds: []
+    Volume: 0
+    VolumeVariance: 0
 --- !u!82 &1134328518
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2059,15 +2067,15 @@ RectTransform:
   m_GameObject: {fileID: 1578345608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 577895942}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 3010, y: 1694}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1578345610
 MonoBehaviour:
