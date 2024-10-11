@@ -18,6 +18,11 @@ public class QuizManager : MonoBehaviour
     public Button nextActionButton;
     private int currentQuestionIndex = 0;
 
+    public Image IbisImageObject;
+    public Sprite IbisIdle;
+    public Sprite IbisCorrect;
+    public Sprite IbisWrong;
+
     private void Start()
     {
         nextActionButton.gameObject.SetActive(false);
@@ -32,6 +37,7 @@ public class QuizManager : MonoBehaviour
         for (int i = 0; i < answerButtons.Length; i++)
         {
             answerButtons[i].GetComponentInChildren<Text>().text = currentQuestion.answers[i];
+            IbisImageObject.sprite = IbisIdle;
             answerButtons[i].image.color = Color.white;
             answerButtons[i].interactable = true;
         }
@@ -48,11 +54,15 @@ public class QuizManager : MonoBehaviour
 
         if (index == currentQuestion.correctAnswerIndex)
         {
+            SoundManager.PlaySound(SoundType.GAMECORRECT);
+            IbisImageObject.sprite = IbisCorrect;
             answerButtons[index].image.color = Color.green;
             Invoke("NextQuestion", 1f);
         }
         else
         {
+            SoundManager.PlaySound(SoundType.GAMEWRONG);
+            IbisImageObject.sprite = IbisWrong;
             answerButtons[index].image.color = Color.red;
             Invoke("ResetButtonColor", 1f);
         }
@@ -62,6 +72,7 @@ public class QuizManager : MonoBehaviour
     {
         foreach (Button button in answerButtons)
         {
+            IbisImageObject.sprite = IbisIdle;
             button.image.color = Color.white;
             button.interactable = true;
         }
