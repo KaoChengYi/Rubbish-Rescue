@@ -147,8 +147,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35243985}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.457092, y: 9, z: -1.8983911}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -318,17 +318,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155632389}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: -10.000002}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 626138299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
-  m_Pivot: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &155632391
 Animator:
   serializedVersion: 5
@@ -2272,8 +2272,8 @@ MonoBehaviour:
   - {fileID: 695362311}
   nextActionButton: {fileID: 1833252464}
   IbisImageObject: {fileID: 225399949}
-  IbisIdle: {fileID: 21300000, guid: eae22519a50d7aa43834e1a81091048c, type: 3}
-  IbisCorrect: {fileID: 21300000, guid: ea117891dfcf3354481e885f344354c5, type: 3}
+  IbisIdle: {fileID: 21300000, guid: ea117891dfcf3354481e885f344354c5, type: 3}
+  IbisCorrect: {fileID: 21300000, guid: eae22519a50d7aa43834e1a81091048c, type: 3}
   IbisWrong: {fileID: 21300000, guid: f25beea6f19d49e43a05356849f7740e, type: 3}
 --- !u!1 &1833252458
 GameObject:
@@ -2525,6 +2525,6 @@ SceneRoots:
   - {fileID: 625702467}
   - {fileID: 767339463}
   - {fileID: 228443398}
-  - {fileID: 1683812335}
   - {fileID: 257933555}
+  - {fileID: 1683812335}
   - {fileID: 626138299}

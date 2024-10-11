@@ -13750,17 +13750,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209669943}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: -10.000002}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2020914587}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
-  m_Pivot: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1365345865
 GameObject:
   m_ObjectHideFlags: 0
@@ -16286,15 +16286,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.2
-  m_Text: 'Lots of different types of plastics can be recycled, like a lot of food
-    packaging, drink bottles and hard plastics.
+  m_Text: 'Lots of different types of plastics can be recycled, like food packaging,
+    drink bottles and hard plastics.
 
 
-    But first they all need to
-    be washed properly!
-
-    Pollutants need to be removed from the plastics - help
-    me get started with the items you''ve already found.'
+    But first they need to be cleaned to remove
+    pollutants from the plastics. Help me get started with the items you''ve already
+    found.'
 --- !u!222 &1962519886
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16319,7 +16317,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.8, y: 36.6}
+  m_AnchoredPosition: {x: -8.8, y: -8.12}
   m_SizeDelta: {x: 1500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1980885921
