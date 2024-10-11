@@ -713,7 +713,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Paper Recycling Process Complete!
+  m_Text: Plastic Recycling Process Complete!
 --- !u!222 &1438196878
 CanvasRenderer:
   m_ObjectHideFlags: 0
