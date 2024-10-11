@@ -593,8 +593,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 495153129}
-        m_TargetAssemblyTypeName: ExitGameWithTransition, Assembly-CSharp
+      - m_Target: {fileID: 495153125}
+        m_TargetAssemblyTypeName: ExitGame, Assembly-CSharp
         m_MethodName: CloseGame
         m_Mode: 1
         m_Arguments:
@@ -1017,6 +1017,14 @@ MonoBehaviour:
     sounds:
     - {fileID: 8300000, guid: 4e3368788d8407c429d5155f1bbccc95, type: 3}
     Volume: 1
+    VolumeVariance: 0
+  - name: GAMECORRECT
+    sounds: []
+    Volume: 0
+    VolumeVariance: 0
+  - name: GAMEWRONG
+    sounds: []
+    Volume: 0
     VolumeVariance: 0
 --- !u!82 &847873589
 AudioSource:
