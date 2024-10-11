@@ -16,6 +16,9 @@ public class PauseMenuManager : MonoBehaviour
     [SerializeField] FirstPersonLook firstPersonLook;
     // Name of credits scene
     [SerializeField] string creditsSceneName;
+    public float waitTime;
+    public Animator musicAnim;
+    public Animator transitionAnim;
 
     private bool isPaused = false;
 
@@ -37,7 +40,9 @@ public class PauseMenuManager : MonoBehaviour
     public void Credits()
     {
         // Load the scene specified in the creditsSceneName variable
-        SceneManager.LoadScene(creditsSceneName);
+        Time.timeScale = 1f;
+        isPaused = false;
+        StartCoroutine(ChangeScene());
     }
 
     public void Pause()
@@ -66,14 +71,24 @@ public class PauseMenuManager : MonoBehaviour
 
     public void LoadTitleScene()
     {
-        SceneManager.LoadScene("Title");
+        SceneManager.LoadScene("Introduction");
     }
 
-	//public void OnSensitivityChange() // 10 to 25 // Removed at the moment
-	//{
- //       float newSensitivity = sensitivitySlider.value / 10f;
+    IEnumerator ChangeScene()
+    {
+        musicAnim.SetTrigger("FadeOut");
+        transitionAnim.SetTrigger("SceneFadeOut");
+        SoundManager.PlaySound(SoundType.UIPLAY);
+        yield return new WaitForSeconds(waitTime);
+        // Load the scene specified in the sceneName variable
+        SceneManager.LoadScene(creditsSceneName);
+    }
 
-	//	firstPersonLook.sensitivity = newSensitivity;
- //       sensitivityText.text = newSensitivity.ToString("F1");
- //   }
+    //public void OnSensitivityChange() // 10 to 25 // Removed at the moment
+    //{
+    //       float newSensitivity = sensitivitySlider.value / 10f;
+
+    //	firstPersonLook.sensitivity = newSensitivity;
+    //       sensitivityText.text = newSensitivity.ToString("F1");
+    //   }
 }
