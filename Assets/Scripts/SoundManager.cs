@@ -25,6 +25,9 @@ public enum SoundType
     UIHOVER,
     UIPLAY,
 
+    GAMECORRECT,
+    GAMEWRONG,
+
     //USE,
     //PICKUPPAPER,
     //PICKUPGLASS,
