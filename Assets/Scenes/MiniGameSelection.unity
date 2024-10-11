@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -214,7 +214,6 @@ GameObject:
   - component: {fileID: 114196061}
   - component: {fileID: 114196060}
   - component: {fileID: 114196059}
-  - component: {fileID: 114196062}
   - component: {fileID: 114196063}
   m_Layer: 5
   m_Name: Paper Button
@@ -337,19 +336,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114196057}
   m_CullTransparentMesh: 1
---- !u!114 &114196062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114196057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c3d23c21b4f579438fce17b681678af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: PaperMiniGame1
 --- !u!114 &114196063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -870,7 +856,6 @@ GameObject:
   - component: {fileID: 888443097}
   - component: {fileID: 888443096}
   - component: {fileID: 888443095}
-  - component: {fileID: 888443098}
   - component: {fileID: 888443099}
   m_Layer: 5
   m_Name: Plastic Button
@@ -993,19 +978,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888443093}
   m_CullTransparentMesh: 1
---- !u!114 &888443098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888443093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c3d23c21b4f579438fce17b681678af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: PlasticMiniGame1
 --- !u!114 &888443099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1260,6 +1232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1247494999}
+  - component: {fileID: 1247495000}
   m_Layer: 0
   m_Name: ButtonController
   m_TagString: Untagged
@@ -1282,6 +1255,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1247495000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247494997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff8ef0545eb33e4f8a10de4126ab72c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 888443095}
+  - {fileID: 114196059}
+  - {fileID: 1519235590}
+  sceneNames:
+  - PlasticMiniGame1
+  - PaperMiniGame1
+  - GlassMiniGame1
 --- !u!1 &1280997640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,7 +1474,6 @@ GameObject:
   - component: {fileID: 1519235592}
   - component: {fileID: 1519235591}
   - component: {fileID: 1519235590}
-  - component: {fileID: 1519235593}
   - component: {fileID: 1519235594}
   m_Layer: 5
   m_Name: Glass Button
@@ -1604,19 +1596,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519235588}
   m_CullTransparentMesh: 1
---- !u!114 &1519235593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519235588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c3d23c21b4f579438fce17b681678af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: GlassMiniGame1
 --- !u!114 &1519235594
 MonoBehaviour:
   m_ObjectHideFlags: 0
